@@ -31,3 +31,8 @@ If you have custom hardware and you want to add support for it in the official r
 1) Go to https://github.com/vedderb/bldc and use the github fork function.  
 2) Make your changes, test them and make a pull request to the main repository.  
 3) If the pull request gets accepted your hardware will become part of the next official release. It will show up in the binary beta typically after a few days and in the stable version the next time a stable release is made.
+
+
+如何编译iOS
+1、确保build文件夹有一个iOS目录
+2、执行build_ios脚本，会在build/ios文件夹生成iOS项目，打开项目进行编译。
