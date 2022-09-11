@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+rm -rf build/ios/*
+# mkdir build/ios
+cd build/ios
+
+$HOME/Qt/5.15.2/ios/bin/qmake $HOME/HardWare/vesc_tool/vesc_tool.pro -spec macx-ios-clang CONFIG+=release CONFIG+=iphoneos CONFIG+=Q_OS_IOS CONFIG+=release_ios CONFIG+=device CONFIG+=qtquickcompiler && /usr/bin/make qmake_all

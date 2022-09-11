@@ -20,6 +20,8 @@
 #include "pagevescpackage.h"
 #include "ui_pagevescpackage.h"
 #include "utility.h"
+#include <QFileDialog>
+#include <qprogressdialog.h>
 
 PageVescPackage::PageVescPackage(QWidget *parent) :
     QWidget(parent),

@@ -33,7 +33,7 @@
 #include <QFontDatabase>
 
 #ifdef Q_OS_IOS
-#include "ios/src/setIosParameters.h"
+//#include "ios/src/setIosParameters.h"
 #endif
 
 #ifdef Q_OS_LINUX
@@ -546,7 +546,7 @@ int main(int argc, char *argv[])
     }
 #endif
 #ifdef Q_OS_IOS
-    SetIosParams();
+//    SetIosParams();
 #endif
 
     int res = app->exec();

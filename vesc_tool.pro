@@ -10,7 +10,7 @@ VT_INTRO_VERSION = 1
 VT_CONFIG_VERSION = 2
 
 # Set to 0 for stable versions and to test version number for development versions.
-VT_IS_TEST_VERSION = 8
+VT_IS_TEST_VERSION = 0
 
 VT_ANDROID_VERSION_ARMV7 = 108
 VT_ANDROID_VERSION_ARM64 = 109
@@ -180,6 +180,14 @@ release_macos {
     RCC_DIR = build/macos/obj
     UI_DIR = build/macos/obj
 }
+release_ios {
+    # brew install qt
+    DESTDIR = build/ios
+    OBJECTS_DIR = build/ios/obj
+    MOC_DIR = build/ios/obj
+    RCC_DIR = build/ios/obj
+    UI_DIR = build/ios/obj
+}
 
 release_android {
     DESTDIR = build/android
@@ -325,7 +333,7 @@ ios {
     app_launch_screen.files = $$files($$PWD/ios/MyLaunchScreen.storyboard)
     QMAKE_BUNDLE_DATA += app_launch_screen
 
-    #QMAKE_IOS_DEPLOYMENT_TARGET = 11.0
+    QMAKE_IOS_DEPLOYMENT_TARGET = 11.0
 
     disable_warning.name = GCC_WARN_64_TO_32_BIT_CONVERSION
     disable_warning.value = NO
